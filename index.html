@@ -1,660 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelia - Coming Soon</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #6B46C1;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
 
-  <title>Pixelia</title>
+        .container {
+            padding: 20px;
+            z-index: 2;
+        }
 
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: fade 2s ease-in;
+        }
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+        .email {
+            color: #F6AD55;
+            text-decoration: none;
+            border-bottom: 2px solid #F6AD55;
+            padding-bottom: 2px;
+            transition: opacity 0.3s ease;
+        }
 
+        .email:hover {
+            opacity: 0.8;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .pixel {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .subtitle {
+                font-size: 1em;
+                padding: 0 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <div class="background"></div>
+        <!-- Animation pixels -->
+        <div class="pixel" style="top: 20%; left: 20%;"></div>
+        <div class="pixel" style="top: 80%; left: 40%;"></div>
+        <div class="pixel" style="top: 40%; left: 80%;"></div>
+        <div class="pixel" style="top: 60%; left: 60%;"></div>
+    </div>
 
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Pixelia
-            </span>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Nos Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> À Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="quote_btn-container">
-              <a href="" class="quote_btn">
-                Accès Exclusif 
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/gamepad-solid.svg" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Expertise en Plateformes Gaming
-                    </h1>
-                    <p>
-                      Spécialisée dans la création de plateformes de jeux vidéo, notre agence conçoit des sites web performants et évolutifs qui captent l'essence même du gaming moderne. 
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contactez-nous
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Solutions Sur Mesure
-                    </h1>
-                    <p>
-                      Chaque projet est unique, et notre approche l'est tout autant. En collaboration avec nos partenaires experts en développement de jeux, nous créons des écosystèmes digitaux complets où technologie et expérience utilisateur se rencontrent.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contactez-noous
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      Marketing Digital et Visibilité
-                    </h1>
-                    <p>
-                      Notre expertise ne s'arrête pas au développement. Pixelia propulse votre plateforme vers le succès grâce à des stratégies de marketing digital ciblées.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Contactez-nous
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ol class="carousel-indicators">
-          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
-        </ol>
-      </div>
-
-    </section>
-    <!-- end slider section -->
-  </div>
-
-  <!-- service section -->
-  <section class="service_section layout_padding">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Nos Services
-        </h2>
-        <p>
-          Nous créons des plateformes de jeux vidéo performantes et attractives, associant expertise technique et stratégies marketing pour garantir le succès de votre projet gaming.
+        <h1>PIXELIA</h1>
+        <h2>Notre site arrive bientôt</h2>
+        <p class="subtitle">
+            Spécialiste des plateformes de jeux vidéo, notre équipe travaille actuellement sur une nouvelle expérience digitale. <br><br>
+            Pour toute demande, contactez-nous à <a href="mailto:contact@pixelia.fr" class="email">contact@pixelia.fr</a>
         </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/dev-brands-solid.svg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Développement Web
-              </h5>
-              <p>
-                Création de plateformes de jeux vidéo robustes et évolutives
-              </p>
-              <a href="">
-                <span>
-                  En savoir plus
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/black-gamepad-solid.svg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Solutions Gaming
-              </h5>
-              <p>
-                Intégration professionnelle de jeux vidéo via nos partenaires experts
-              </p>
-              <a href="">
-                <span>
-                  En savoir plus
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Marketing Digital
-              </h5>
-              <p>
-                Stratégies marketing ciblées, incluant SEO, SEA et gestion des réseaux sociaux
-              </p>
-              <a href="">
-                <span>
-                  En savoir plus
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/s2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Analyse & Performance
-              </h5>
-              <p>
-                Suivi détaillé des performances, analyse des comportements utilisateurs
-              </p>
-              <a href="">
-                <span>
-                  En savoir plus
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
-      </div>
-      -->
     </div>
-  </section>
-  <!-- end service section -->
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- case section -->
-
-  <section class="case_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Case Studies
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/case-1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Sit amet consectetur adipisicing elit
-              </h5>
-              <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/case-2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Excepturi placeat nihil eos maxime
-              </h5>
-              <p>
-                Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                <span>
-                  Read More
-                </span>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end case section -->
-
-  <!-- client section -->
-  <section class="client_section ">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-    </div>
-    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="detail-box">
-                    <div class="client_info">
-                      <div class="client_name">
-                        <h5>
-                          Morojink
-                        </h5>
-                        <h6>
-                          Customer
-                        </h6>
-                      </div>
-                      <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore
-                      et
-                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                      cillum
-                      dolore eu fugia
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ol class="carousel-indicators">
-        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
-        <li data-target="#customCarousel2" data-slide-to="1"></li>
-        <li data-target="#customCarousel2" data-slide-to="2"></li>
-      </ol>
-    </div>
-  </section>
-  <!-- end client section -->
-
-
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 col-lg-4 offset-md-1">
-          <div class="form_container">
-            <div class="heading_container">
-              <h2>
-                Request A Call back
-              </h2>
-            </div>
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name " />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-7 px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  <div class="footer_container">
-    <!-- info section -->
-
-    <section class="info_section ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 ">
-            <div class="info_detail">
-              <h4>
-                Digian
-              </h4>
-              <p>
-                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-2 mx-auto">
-            <div class="info_link_box">
-              <h4>
-                Links
-              </h4>
-              <div class="info_links">
-                <a class="" href="index.html">
-                  Home
-                </a>
-                <a class="" href="about.html">
-                  About
-                </a>
-                <a class="" href="service.html">
-                  Services
-                </a>
-                <a class="" href="contact.html">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ">
-            <h4>
-              Subscribe
-            </h4>
-            <form action="#">
-              <input type="text" placeholder="Enter email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
-            <div class="info_contact">
-              <h4>
-                Address
-              </h4>
-              <div class="contact_link_box">
-                <a href="">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>
-                    Location
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    Call +01 1234567890
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <span>
-                    demo@gmail.com
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="info_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end info section -->
-
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
-    </footer>
-    <!-- footer section -->
-  </div>
-
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
-
+    <script>
+        // Animation aléatoire des pixels
+        document.querySelectorAll('.pixel').forEach(pixel => {
+            pixel.style.animationDelay = Math.random() * 5 + 's';
+        });
+    </script>
 </body>
-
 </html>
