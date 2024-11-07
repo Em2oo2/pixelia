@@ -1,136 +1,631 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixelia - Coming Soon</title>
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-            background: #6B46C1;
-            color: white;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            overflow: hidden;
-            position: relative;
-        }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-        .container {
-            padding: 20px;
-            z-index: 2;
-        }
+  <title>Pixelia</title>
 
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            animation: fade 2s ease-in;
-        }
 
-        h2 {
-            font-size: 2em;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-        .subtitle {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            line-height: 1.6;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-        .email {
-            color: #F6AD55;
-            text-decoration: none;
-            border-bottom: 2px solid #F6AD55;
-            padding-bottom: 2px;
-            transition: opacity 0.3s ease;
-        }
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
-        .email:hover {
-            opacity: 0.8;
-        }
-
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-            pointer-events: none;
-        }
-
-        .pixel {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: white;
-            animation: float 10s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
-
-        @keyframes fade {
-            0% { opacity: 0; transform: translateY(-20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
-            .subtitle {
-                font-size: 1em;
-                padding: 0 20px;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <div class="background"></div>
-        <!-- Animation pixels -->
-        <div class="pixel" style="top: 20%; left: 20%;"></div>
-        <div class="pixel" style="top: 80%; left: 40%;"></div>
-        <div class="pixel" style="top: 40%; left: 80%;"></div>
-        <div class="pixel" style="top: 60%; left: 60%;"></div>
-    </div>
 
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Pixelia
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Nos Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> À Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <a href="" class="quote_btn">
+                Accès Exclusif 
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/gamepad-solid.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Expertise en Plateformes Gaming
+                    </h1>
+                    <p>
+                      Spécialisée dans la création de plateformes de jeux vidéo, notre agence conçoit des sites web performants et évolutifs qui captent l'essence même du gaming moderne. 
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contactez-nous
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Solutions Sur Mesure
+                    </h1>
+                    <p>
+                      Chaque projet est unique, et notre approche l'est tout autant. En collaboration avec nos partenaires experts en développement de jeux, nous créons des écosystèmes digitaux complets où technologie et expérience utilisateur se rencontrent.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contactez-noous
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Marketing Digital et Visibilité
+                    </h1>
+                    <p>
+                      Notre expertise ne s'arrête pas au développement. Pixelia propulse votre plateforme vers le succès grâce à des stratégies de marketing digital ciblées.
+                    </p>
+                    <div class="btn-box">
+                      <a href="contact.html" class="btn1">
+                        Contactez-nous
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
     <div class="container">
-        <h1>PIXELIA</h1>
-        <h2>Notre site arrive bientôt</h2>
-        <p class="subtitle">
-            Spécialiste des plateformes de jeux vidéo, notre équipe travaille actuellement sur une nouvelle expérience digitale. <br><br>
-            Pour toute demande, contactez-nous à <a href="mailto:contact@pixelia.fr" class="email">contact@pixelia.fr</a>
+      <div class="heading_container">
+        <h2>
+          Nos Services
+        </h2>
+        <p>
+          Nous créons des plateformes de jeux vidéo performantes et attractives, associant expertise technique et stratégies marketing pour garantir le succès de votre projet gaming.
         </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/dev-brands-solid.svg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Développement Web
+              </h5>
+              <p>
+                Création de plateformes de jeux vidéo robustes et évolutives
+              </p>
+              <a href="">
+                <span>
+                  En savoir plus
+                </span>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/black-gamepad-solid.svg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Solutions Gaming
+              </h5>
+              <p>
+                Intégration professionnelle de jeux vidéo via nos partenaires experts
+              </p>
+              <a href="">
+                <span>
+                  En savoir plus
+                </span>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Marketing Digital
+              </h5>
+              <p>
+                Stratégies marketing ciblées, incluant SEO, SEA et gestion des réseaux sociaux
+              </p>
+              <a href="">
+                <span>
+                  En savoir plus
+                </span>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Analyse & Performance
+              </h5>
+              <p>
+                Suivi détaillé des performances, analyse des comportements utilisateurs
+              </p>
+              <a href="">
+                <span>
+                  En savoir plus
+                </span>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="btn-box">
+        <a href="">
+          View More
+        </a>
+      </div>
+      -->
     </div>
+  </section>
+  <!-- end service section -->
 
-    <script>
-        // Animation aléatoire des pixels
-        document.querySelectorAll('.pixel').forEach(pixel => {
-            pixel.style.animationDelay = Math.random() * 5 + 's';
-        });
-    </script>
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Qui sommes-nous ?
+              </h2>
+            </div>
+            <p>
+                Fondée en 2020 par une équipe passionnée de gaming et de technologies web, Pixelia est née de l'ambition de créer des plateformes de jeux vidéo en ligne innovantes et performantes. Ce qui a commencé comme un petit projet entre développeurs s'est rapidement transformé en une agence reconnue pour son expertise dans la création de sites web dédiés aux jeux vidéo.
+
+                Avec une équipe de 10 experts en design web, développement et marketing digital, nous avons déjà accompagné plus de 50 projets à succès. Chez Pixelia, nous nous concentrons sur l'optimisation de chaque plateforme, assurant à nos clients une expérience utilisateur fluide et des performances optimales.
+            </p>
+            <a href="about.html">
+              En savoir plus
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- case section -->
+
+  <section class="case_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Nos projets récents
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/case-1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                GameMaster Arena <br> Une plateforme d'eSport dynamique
+              </h5>
+              <p>
+                Nous avons collaboré avec GameMaster Arena, un leader émergent dans le monde des compétitions d'eSport, pour créer une plateforme web entièrement optimisée.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/case-2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                PixelWorld <br> La plateforme de jeux rétro en ligne
+              </h5>
+              <p>
+                PixelWorld est une plateforme dédiée aux amateurs de jeux vidéo rétro. Nous avons travaillé étroitement avec leur équipe pour concevoir un site responsive et ludique qui capture l'esthétique pixelisée des années 80 et 90.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end case section -->
+
+  <!-- client section -->
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Ils donnent leur avis
+        </h2>
+      </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                            Jean-Michel L.
+                        </h5>
+                        <h6>
+                            Fondateur de GameWorld
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        "Pixelia a su comprendre exactement nos besoins pour créer une plateforme web sur mesure, à la fois robuste et intuitive. Leur expertise en intégration de jeux et en optimisation des performances a permis à notre site de se démarquer dans un marché très compétitif. L'équipe a été proactive et disponible tout au long du projet. Nous ne pourrions pas être plus satisfaits du résultat !"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client2.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                            Sophie D.
+                        </h5>
+                        <h6>
+                            Responsable Marketing chez MegaPlay
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        "Nous avons fait appel à Pixelia pour améliorer l'UX et la visibilité de notre plateforme. Grâce à leur accompagnement sur le SEO et le marketing digital, notre site a vu une nette augmentation de trafic et un meilleur taux de conversion. Leur stratégie de communication et leur gestion des réseaux sociaux ont boosté l’engagement de notre communauté. Je recommande vivement Pixelia pour leur professionnalisme et leurs résultats impressionnants."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client3.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                            Marc T.
+                        </h5>
+                        <h6>
+                            CEO de GamersHub
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        "Pixelia a transformé notre vision en réalité. Leur équipe a créé une plateforme de jeux en ligne fluide et attractive, tout en intégrant des fonctionnalités complexes comme la gestion des abonnements et des systèmes de paiement. Leur collaboration avec un développeur de jeux de renom a permis une parfaite intégration des jeux sur notre site. Nous sommes ravis du travail accompli !"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel2" data-slide-to="1"></li>
+        <li data-target="#customCarousel2" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+  <!-- end client section -->
+
+
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-lg-4 offset-md-1">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>
+                Formulaire de contact
+              </h2>
+            </div>
+            <form action="">
+              <div>
+                <input type="text" placeholder="Nom Prénom " />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Numéro de téléphone" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  ENVOYER
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7 px-0">
+          <div class="map_container">
+            <div class="map">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.730322567403!2d6.804326499999998!3d47.495166700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47921727a66ef849%3A0x21887bf144ca2581!2sUFR%20STGI%20-%20universit%C3%A9%20de%20Franche-Comt%C3%A9!5e0!3m2!1sfr!2sfr!4v1729588530187!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <div class="footer_container">
+    <!-- info section -->
+
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 ">
+            <div class="info_detail">
+              <h4>
+                Pixelia
+              </h4>
+              <p>
+                Agence web spécialisée dans la création de plateformes de jeux vidéo innovantes. Notre expertise technique et notre compréhension du secteur gaming nous permettent de transformer vos ambitions en réalité digitale.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 mx-auto">
+            <div class="info_link_box">
+              <h4>
+                Liens
+              </h4>
+              <div class="info_links">
+                <a class="" href="index.html">
+                  Accueil
+                </a>
+                <a class="" href="about.html">
+                  À Propos
+                </a>
+                <a class="" href="service.html">
+                  Nos Services
+                </a>
+                <a class="" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 ">
+            <h4>
+              Abonnez-vous
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Entrez votre adresse mail" />
+              <button type="submit">
+                Je m'abonne
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-0 ml-auto">
+            <div class="info_contact">
+              <h4>
+                Adresse
+              </h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    UFR STGI - Montbéliard, 4 Pl. Lucien Tharradin, 25200 Montbéliard
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    +01 1234567890
+                   </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    demo@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+            &copy; <span id="displayYear"></span> Tous droits réservés
+            <a href="https://html.design/">Pixelia </a>
+          </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+  </div>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
 </body>
+
 </html>
