@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelia - Coming Soon</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            background: #6B46C1;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            padding: 20px;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: fade 2s ease-in;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .email {
+            color: #F6AD55;
+            text-decoration: none;
+            border-bottom: 2px solid #F6AD55;
+            padding-bottom: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .email:hover {
+            opacity: 0.8;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .pixel {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .subtitle {
+                font-size: 1em;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+        <!-- Animation pixels -->
+        <div class="pixel" style="top: 20%; left: 20%;"></div>
+        <div class="pixel" style="top: 80%; left: 40%;"></div>
+        <div class="pixel" style="top: 40%; left: 80%;"></div>
+        <div class="pixel" style="top: 60%; left: 60%;"></div>
+    </div>
+
+    <div class="container">
+        <h1>PIXELIA</h1>
+        <h2>Notre site arrive bientôt</h2>
+        <p class="subtitle">
+            Spécialiste des plateformes de jeux vidéo, notre équipe travaille actuellement sur une nouvelle expérience digitale. <br><br>
+            Pour toute demande, contactez-nous à <a href="mailto:contact@pixelia.fr" class="email">contact@pixelia.fr</a>
+        </p>
+    </div>
+
+    <script>
+        // Animation aléatoire des pixels
+        document.querySelectorAll('.pixel').forEach(pixel => {
+            pixel.style.animationDelay = Math.random() * 5 + 's';
+        });
+    </script>
+</body>
+</html>
